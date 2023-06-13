@@ -1,0 +1,306 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: black;
+}
+
+.main {
+  width: 100%;
+  height: 550px;
+  color: white;
+}
+
+.mainSection {
+  width:100%;
+  height: 100%;
+}
+.gradientSection {
+  position: absolute;
+  width: 100%;
+  height: 550px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+}
+
+.mainImage {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  z-index: 100;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+}
+
+.Logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  color: red;
+  font-size: 50px;
+  font-weight: bold;
+}
+.SignIn{
+  color: white;
+  padding-right: 16px;
+  border-radius: 0.25rem;
+
+}
+.SignUp{
+  background-color: red;
+  color: white;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  cursor: pointer;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-radius: 2px;
+
+}
+.suggestedMovie {
+  justify-content: center;
+  position: absolute;
+  background-color: #D3D3D3;
+  border: 1px;
+  color: white;
+}
+.suggestedButtons{
+  border-width: 1px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+
+}
+
+/* CSS */
+.button-23 {
+  background-color: #FFFFFF;
+  border: 1px solid #222222;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 13px 23px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+  user-select: none;
+  width: auto;
+}
+
+.button-23:focus-visible {
+  box-shadow: gray 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow .2s;
+}
+
+.button-23:active {
+  background-color: #F7F7F7;
+  border-color: red;
+  transform: scale(.96);
+}
+
+.button-23:disabled {
+  border-color: #DDDDDD;
+  color: #DDDDDD;
+}
+.watchLater {
+background-color: #222222;
+color:white;
+border-radius: 2px;
+padding: 13px 23px;
+box-sizing: border-box;
+cursor: pointer;
+font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+font-size: 16px;
+font-weight: 600;
+line-height: 20px;
+margin: 0;
+outline: none;
+padding: 13px 23px;
+position: relative;
+text-align: center;
+text-decoration: none;
+touch-action: manipulation;
+transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+user-select: none;
+width: auto;
+margin-left: 1rem;
+}
+.watchLater:active {
+  background-color: red;
+  border-color: black;
+  transform: scale(.96);
+}
+.watchLater:disabled {
+  border-color: #DDDDDD;
+  color: #DDDDDD;
+}
+.watchLater:focus-visible {
+  box-shadow: gray 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow .2s;
+}
+.holding {
+  position: absolute;
+  width: 100%;
+  top: 20%;
+  padding: 1rem;
+}
+@media all and (min-width: 768px) {
+  .md\:p-8 {
+      padding: 2rem/* 32px */;
+  }
+  .movieOverview {
+    max-width: 70;
+  }
+  .categoryImages {
+    width: 240px;
+    .md\:w-\[240px\] {
+      width: 240px;
+  }
+  .lg\:w-\[280px\] {
+    width: 280px;
+}
+.sm\:w-\[200px\] {
+  width: 200px;
+}
+  }
+}
+
+.movieTitle {
+  font-size: xx-large;
+  font-weight: bolder;
+
+}
+.movieRelease {
+  font-size: small;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+.movieOverview {
+  width:100%;
+  color: #ABABAB;
+}
+.categoryName{
+  color: white;
+  font-weight: bold;
+  font-size: medium;
+  padding: 1rem;
+}
+.categoryMovies {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+
+.categoryImages{
+  width: 160px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding: 0.5rem;
+}
+
+.categoryImageDiscrip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  opacity: 0;
+  background-color: rgb(0 0 0 / 0.8);
+}
+.categoryImgStyle {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.overlay {
+  top: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: white;
+  opacity: 0;
+  transition: background-color 0.3 ease;
+}
+.overlay:hover {
+  opacity: 100;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.mtitles {
+  white-space: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+.hearts {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: gray;
+}
+.sliderStyle {
+  width: 100%;
+  height: 100%;
+  overflow-x: scroll;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  scroll-behavior: hide;
+}
+.directionalButtons {
+  border-radius: 9999px;
+  position : absolute;
+  cursor: pointer;
+  opacity: 50;
+  z-index: 10;
+  background-color: transparent;
+  left: 0;
+}
+.directionalButtons:hover {
+  opacity: 100;
+  background-color: white;
+  display: block;
+}
+
+.directionalButtonsr {
+  border-radius: 9999px;
+  position : absolute;
+  cursor: pointer;
+  opacity: 50;
+  z-index: 10;
+  background-color: transparent;
+  right:0;
+}
+.directionalButtonsr:hover {
+  opacity: 100;
+  background-color: white;
+  display: block;
+}
